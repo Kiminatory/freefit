@@ -410,6 +410,10 @@ input {
     align-items: center;
 }
 
+.input-checkbox a {
+    border-bottom: 1px solid var(--dark);
+}
+
 .checkbox {
     width: 24px;
     height: 24px;
