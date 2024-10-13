@@ -16,7 +16,7 @@
                 <a href="#" class="logo"></a>
             </div>
             <div class="header-burger">
-                <button class="menu-burger">
+                <button onclick="openModal()" class="menu-burger">
                 </button>
             </div>
             <div class="header-menu">
@@ -33,6 +33,66 @@
     </header>
 
     <main class="main">
+        <section class="training wrapper">
+            <div class="training-header">
+                <div class="training-title">
+                    <h2>Расписание тренировок</h2>
+                </div>
+                <div class="training-data">
+                    <h3>22 - 28 июня</h3>
+                </div>
+            </div>
+            <div class="training-schedule">
+                <div class="schedule-block">
+                    <div class="schedule-data">
+                        <h4>22 июня, 10:00</h4>
+                    </div>
+                    <div class="schedule-name">
+                        Функциональный тренинг
+                    </div>
+                </div>
+                <div class="schedule-block">
+                    <div class="schedule-data">
+                        <h4>24 июня, 10:00</h4>
+                    </div>
+                    <div class="schedule-name">
+                        Body sculpt
+                    </div>
+                </div>
+                <div class="schedule-block">
+                    <div class="schedule-data">
+                        <h4>26 июня, 11:00</h4>
+                    </div>
+                    <div class="schedule-name">
+                        L.A.B.
+                    </div>
+                </div>
+                <div class="schedule-block">
+                    <div class="schedule-data">
+                        <h4>23 июня, 10:00</h4>
+                    </div>
+                    <div class="schedule-name">
+                        Силовой микс
+                    </div>
+                </div>
+                <div class="schedule-block">
+                    <div class="schedule-data">
+                        <h4>25 июня, 11:00</h4>
+                    </div>
+                    <div class="schedule-name">
+                        Дыхательные практики
+                    </div>
+                </div>
+                <div class="schedule-block">
+                    <div class="schedule-data">
+                        <h4>27 июня, 10:00</h4>
+                    </div>
+                    <div class="schedule-name">
+                        Комплексная разминка
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section-form">
             <div class="wrapper">
                 <div class="form-title">
@@ -123,6 +183,30 @@
             </div>
         </div>
     </footer>
+
+    <div class="menu" id="modal">
+        <div class="menu-header">
+            <div class="menu-logo">
+                <div class="menu-logo">
+                    <a href="#" class="logo"></a>
+                </div>
+                <div class="">
+                    <button onclick="closeModal()" class="close-burger">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="burger-menu_list">
+            <ul class="list">
+                <li><a href="#">Мероприятия</a></li>
+                <li><a href="#">Расписание</a></li>
+                <li><a href="#">О компании</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="/js/script.js"></script>
 </body>
 
 </html>
