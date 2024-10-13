@@ -11,13 +11,13 @@
 
 @font-face {
     font-family: 'Montserrat-Bold';
-    src: url(/fonts/Montserrat-Bold.ttf);
+    src: url(../fonts/Montserrat-Bold.ttf);
     font-weight: 700;
 }
 
 @font-face {
     font-family: 'Montserrat-Regular';
-    src: url(/fonts/Montserrat-Regular.ttf);
+    src: url(../fonts/Montserrat-Regular.ttf);
     font-weight: 400;
 }
 
@@ -75,7 +75,7 @@ h6 {
 
 .menu-burger {
     display: none;
-    background: url(/img/burger.svg);
+    background: url(../img/burger.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1.8125rem;
@@ -86,7 +86,7 @@ h6 {
 
 .logo {
     display: block;
-    background: url(/img/logo.svg);
+    background: url(../img/logo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 6.0625rem;
@@ -242,7 +242,7 @@ h6 {
     width: 65px;
     height: 65px;
     margin-bottom: 40px;
-    background-image: url(/img/icons/body.svg);
+    background-image: url(../img/icons/body.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -257,7 +257,7 @@ h6 {
     width: 42px;
     height: 85px;
     margin-bottom: 40px;
-    background-image: url(/img/icons/bottle.svg);
+    background-image: url(../img/icons/bottle.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -272,7 +272,7 @@ h6 {
     width: 91px;
     height: 50px;
     margin-bottom: 40px;
-    background-image: url(/img/icons/dumbbell.svg);
+    background-image: url(../img/icons/dumbbell.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -287,7 +287,7 @@ h6 {
     width: 67px;
     height: 107px;
     margin-bottom: 40px;
-    background-image: url(/img/icons/jump.svg);
+    background-image: url(../img/icons/jump.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -302,7 +302,7 @@ h6 {
     width: 65px;
     height: 61px;
     margin-bottom: 40px;
-    background-image: url(/img/icons/heart.svg);
+    background-image: url(../img/icons/heart.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -317,7 +317,7 @@ h6 {
     width: 58px;
     height: 66px;
     margin-bottom: 40px;
-    background-image: url(/img/icons/weight.svg);
+    background-image: url(../img/icons/weight.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -525,7 +525,7 @@ input {
 
 .menu-burger {
     display: none;
-    background: url(/img/burger.svg);
+    background: url(../img/burger.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1.8125rem;
@@ -536,7 +536,7 @@ input {
 
 .logo {
     display: block;
-    background: url(/img/logo.svg);
+    background: url(../img/logo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 6.0625rem;
@@ -639,7 +639,7 @@ input {
 .logo {}
 
 .close-burger {
-    background-image: url(../img/icons/close.svg);
+    background-image: url(..../img/icons/close.svg);
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
@@ -912,7 +912,7 @@ input {
         width: 39px;
         height: 39px;
         margin-bottom: 40px;
-        background-image: url(/img/icons/body.svg);
+        background-image: url(../img/icons/body.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -924,7 +924,7 @@ input {
         width: 23px;
         height: 47px;
         margin-bottom: 40px;
-        background-image: url(/img/icons/bottle.svg);
+        background-image: url(../img/icons/bottle.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -936,7 +936,7 @@ input {
         width: 46px;
         height: 25px;
         margin-bottom: 40px;
-        background-image: url(/img/icons/dumbbell.svg);
+        background-image: url(../img/icons/dumbbell.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -949,7 +949,7 @@ input {
         width: 34px;
         height: 53px;
         margin-bottom: 40px;
-        background-image: url(/img/icons/jump.svg);
+        background-image: url(../img/icons/jump.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -961,7 +961,7 @@ input {
         width: 39px;
         height: 37px;
         margin-bottom: 40px;
-        background-image: url(/img/icons/heart.svg);
+        background-image: url(../img/icons/heart.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -972,7 +972,7 @@ input {
         width: 35px;
         height: 40px;
         margin-bottom: 40px;
-        background-image: url(/img/icons/weight.svg);
+        background-image: url(../img/icons/weight.svg);
         background-size: cover;
         background-repeat: no-repeat;
     }
