@@ -6,6 +6,7 @@
 
     --dark: #2B3541;
     --yellow: #ffff00;
+    --yellowRGB: rgb(255, 255, 0);
     --grey: rgba(243, 243, 243, 1);
 }
 
@@ -168,32 +169,110 @@ h6 {
 
 /* training */
 .training {
+    position: relative;
+    display: flex;
+}
+
+
+.training-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.training-title {
+    max-width: 632px;
+}
+
+.training-title h1 {
+    font-family: var(--bold);
+    font-size: 48px;
+}
+
+.training-subtitle {
+    margin-top: 40px;
+}
+
+.training-subtitle span {
+    margin-right: 16px;
+}
+
+.training-subtitle h2 {
+    font-size: 40px;
+}
+
+.training-text {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 100px;
+    max-width: 297px;
+    margin-right: 44px;
+}
+
+.training-btn {
+    margin-left: 100px;
+}
+
+.training-btn button {
+    font-family: var(--bold);
+    background: var(--yellow);
+    border: none;
+    padding: 20px 30px;
+    filter: drop-shadow(0 4px 4px var(--yellowRGB));
+    text-transform: uppercase;
+}
+
+/*  */
+
+.training-bg {
+    opacity: 0.45;
+    background-image: linear-gradient(#FBF138, #FDF9B6);
+    max-width: 464px;
+    height: clamp(493px, 50vw, 852px);
+    width: 100%;
+}
+
+.training img {
+    /* position: absolute;
+    right: -100px;
+    bottom: 0;
+    width: 100%;
+    max-width: 996px; */
+    position: absolute;
+    right: -4vw;
+    bottom: 0;
+    width: clamp(399px, 50vw, 996px);
+}
+
+/* schedule */
+.schedule {
     margin: 158px auto 186px;
 }
 
-.training-header {
+.schedule-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 38px;
 }
 
-.training-title {
+.schedule-title {
     max-width: 356px;
 }
 
-.training-title h2 {
+.schedule-title h2 {
     font-family: var(--bold);
     font-size: 40px;
 }
 
-.training-data {}
+.schedule-data {}
 
-.training-data h3 {
+.schedule-data h3 {
     font-family: var(--bold);
     font-size: 28px;
 }
 
-.training-schedule {
+.schedule-schedule {
     display: grid;
     gap: 20px;
     grid-template-areas:
@@ -764,7 +843,7 @@ input {
         display: none;
     }
 
-    .training-schedule {
+    .schedule-schedule {
         display: grid;
         gap: 20px;
         grid-template-areas:
@@ -878,11 +957,11 @@ input {
         display: block;
     }
 
-    .training {
+    .schedule {
         margin: 76px 0;
     }
 
-    .training-schedule {
+    .schedule-schedule {
         display: grid;
         gap: 20px;
         grid-template-areas:
@@ -896,16 +975,16 @@ input {
         grid-template-rows: 1fr;
     }
 
-    .training-title {
+    .schedule-title {
         max-width: 200px;
     }
 
-    .training-title h2 {
+    .schedule-title h2 {
         font-family: var(--bold);
         font-size: 26px;
     }
 
-    .training-data h3 {
+    .schedule-data h3 {
         font-family: var(--bold);
         font-size: 16px;
     }
