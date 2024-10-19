@@ -60,6 +60,10 @@ h6 {
     padding: 0;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* header */
 .header {}
 
@@ -223,6 +227,28 @@ h6 {
     text-transform: uppercase;
 }
 
+.training-btn-botton {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.training-btn-botton .btn {
+    border: none;
+    background: #fff;
+    background: url(/img/icons/Arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 52px;
+    height: 55px;
+
+}
+
+.training img {
+    right: 4vw;
+}
+
+
 /*  */
 
 .training-bg {
@@ -240,7 +266,7 @@ h6 {
     width: 100%;
     max-width: 996px; */
     position: absolute;
-    right: -4vw;
+    right: 0vw;
     bottom: 0;
     width: clamp(399px, 50vw, 996px);
 }
@@ -560,8 +586,9 @@ input {
 .about-subinfo {
     display: grid;
     grid-template-columns: 231px 284px 221px 204px;
-    grid-template-areas: 'a b c d';
-    gap: 67px;
+    grid-template-areas:
+        'a b c d';
+    gap: 72px;
 }
 
 .about-subtitle {
@@ -750,6 +777,48 @@ input {
     .list-item {
         font-size: 0.875rem;
     }
+
+    .training img {
+        right: 0vw;
+    }
+
+    .about-subinfo {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'a b'
+            'c d';
+        gap: 43px 148px;
+    }
+
+    /*  */
+
+    .training-title h1 {
+        font-family: var(--bold);
+        font-size: 26px;
+    }
+
+    .training-subtitle h2 {
+        font-size: 28px;
+    }
+
+    .training-text {
+        font-size: 18px;
+        margin-left: 0;
+
+    }
+
+    .training-btn {
+        margin-left: 0;
+    }
+
+    .training-btn-botton .btn {
+        width: 39px;
+        height: 40px;
+    }
+
+    .training img {
+        right: 3vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -853,9 +922,17 @@ input {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+
+    /*  */
 }
 
 @media (max-width: 576px) {
+
+    .training-bg,
+    .img-girl,
+    .training-btn-botton {
+        display: none;
+    }
 
     .section-about {
         margin-bottom: 68px;
