@@ -233,8 +233,8 @@ button {
     bottom: 0;
 }
 
-.training-btn-botton .btn {
-    border: none;
+.training-btn-botton .scroll-btn {
+    display: block;
     background: #fff;
     background: url(/img/icons/Arrow.svg);
     background-size: cover;
@@ -522,7 +522,7 @@ input {
 .checkbox {
     width: 24px;
     height: 24px;
-    margin-right: 2px;
+    margin-right: 3px;
 }
 
 /* section-about */
@@ -728,12 +728,14 @@ input {
 
 /* menu-border */
 .menu {
+    display: none;
     position: absolute;
     top: -300px;
     left: 0;
     width: 100%;
     z-index: 999;
     background: #F3F3F3;
+    transition-duration: var(--tr);
 }
 
 .menu-header {
@@ -749,7 +751,7 @@ input {
 .logo {}
 
 .close-burger {
-    background-image: url(..../img/icons/close.svg);
+    background-image: url(../img/icons/close.svg);
     background-repeat: no-repeat;
     background-size: cover;
     border: none;
@@ -822,9 +824,19 @@ input {
 }
 
 @media (max-width: 768px) {
+    .header {
+        height: 100px;
+    }
+
     .header-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
         padding: 2.1875rem 0.625rem;
         gap: 0 38px;
+        z-index: 999;
     }
 
     .menu-burger {
@@ -921,6 +933,11 @@ input {
             'e f';
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+    }
+
+    .menu {
+        position: fixed;
+        display: block;
     }
 
     /*  */
@@ -1031,7 +1048,8 @@ input {
     }
 
     ._mobile {
-        display: block;
+        display: flex;
+        font-size: 11px;
     }
 
     .schedule {
@@ -1052,6 +1070,8 @@ input {
         grid-template-rows: 1fr;
     }
 
+
+
     .schedule-title {
         max-width: 200px;
     }
@@ -1064,6 +1084,12 @@ input {
     .schedule-data h3 {
         font-family: var(--bold);
         font-size: 16px;
+    }
+
+    .schedule-block::before {
+
+        background-image: none;
+
     }
 
     .schedule-block:nth-child(1) .schedule-name::before {
