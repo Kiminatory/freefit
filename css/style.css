@@ -70,7 +70,7 @@ button {
 .header-wrapper {
     display: flex;
     align-items: center;
-    padding: 3.125rem 0.625rem;
+    padding: 47px 0.625rem;
     gap: 2.625rem;
 }
 
@@ -181,56 +181,69 @@ button {
 .training-info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    margin-top: 198px;
+    margin-left: 1px;
+    margin-right: 18px;
+    /* gap: 28px; */
+    /* margin-top: -83px; */
 }
 
 .training-title {
     max-width: 632px;
+    margin-bottom: 46px;
 }
 
 .training-title h1 {
     font-family: var(--bold);
     font-size: 48px;
+    text-transform: uppercase;
 }
 
 .training-subtitle {
-    margin-top: 40px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .training-subtitle span {
-    margin-right: 16px;
+    margin-right: 11px;
 }
 
 .training-subtitle h2 {
-    font-size: 40px;
+    font-size: 38px;
+    margin-left: 3px;
 }
 
 .training-text {
     font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 32px;
+    margin-left: 0;
     max-width: 297px;
-    margin-right: 44px;
+    line-height: 27px;
+    letter-spacing: -0.5px;
+    margin-top: 0;
+    margin-left: 89px;
+    word-spacing: 1px;
 }
 
 .training-btn {
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .training-btn button {
     font-family: var(--bold);
     background: var(--yellow);
     border: none;
-    padding: 20px 30px;
+    padding: 22px 29px;
     filter: drop-shadow(0 4px 4px var(--yellowRGB));
     text-transform: uppercase;
 }
 
 .training-btn-botton {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    left: 16px;
+    bottom: -1px;
 }
 
 .training-btn-botton .scroll-btn {
@@ -254,9 +267,11 @@ button {
 .training-bg {
     opacity: 0.45;
     background-image: linear-gradient(#FBF138, #FDF9B6);
-    max-width: 464px;
-    height: clamp(493px, 50vw, 852px);
+    max-width: 463px;
+    height: clamp(493px, 53.3vw, 852px);
     width: 100%;
+    margin-top: -20px;
+    max-width: 448px;
 }
 
 .training img {
@@ -266,29 +281,33 @@ button {
     width: 100%;
     max-width: 996px; */
     position: absolute;
-    right: 0vw;
+    right: -7vw;
+    top: 1.2vw;
     bottom: 0;
-    width: clamp(399px, 50vw, 996px);
+    width: clamp(399px, 62vw, 996px);
+    height: clamp(364px, 50.6vw, 855px);
 }
 
 /* schedule */
 .schedule {
-    margin: 158px auto 186px;
+    margin: 156px auto 152px;
 }
 
 .schedule-header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 38px;
+    margin-right: 35px;
 }
 
 .schedule-title {
     max-width: 356px;
+    margin-left: 0px;
 }
 
 .schedule-title h2 {
     font-family: var(--bold);
-    font-size: 40px;
+    font-size: 39px;
 }
 
 .schedule-data {}
@@ -300,13 +319,13 @@ button {
 
 .schedule-schedule {
     display: grid;
-    gap: 20px;
+    gap: 22px;
     grid-template-areas:
         'a b c'
         'd b f'
         'd e f';
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 309px 73px 281px;
+    grid-template-columns: 353px 348px 350px;
+    grid-template-rows: 297px 64px 273px;
 }
 
 .schedule-block {
@@ -315,7 +334,7 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 23px 24px 18px 30px;
     z-index: 1;
 }
 
@@ -354,6 +373,7 @@ button {
 
 .schedule-block:nth-child(2) {
     grid-area: b;
+    padding: 20px 23px 15px 27px;
 }
 
 .schedule-block:nth-child(2) .schedule-name::before {
@@ -369,6 +389,7 @@ button {
 
 .schedule-block:nth-child(3) {
     grid-area: c;
+    padding: 20px 24px 19px 33px;
 }
 
 .schedule-block:nth-child(3) .schedule-name::before {
@@ -384,6 +405,7 @@ button {
 
 .schedule-block:nth-child(4) {
     grid-area: d;
+    padding: 19px 24px 21px 29px;
 }
 
 .schedule-block:nth-child(4) .schedule-name::before {
@@ -438,7 +460,7 @@ button {
 
 .schedule-name {
     font-family: var(--bold);
-    font-size: 18px;
+    font-size: 17px;
 }
 
 /* .section-form  */
@@ -447,7 +469,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0;
+    padding: 61px 0;
     background: var(--grey);
 }
 
@@ -459,13 +481,13 @@ button {
 .form-title::before {
     content: '';
     display: block;
-    width: 53px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: var(--yellow);
     position: absolute;
     top: -18px;
-    left: -18px;
+    left: -33px;
     z-index: 1;
     box-shadow: 0px 7px 27px -1px var(--yellow);
 }
@@ -475,8 +497,10 @@ button {
 .form-title h3 {
     position: relative;
     font-family: var(--bold);
-    font-size: 40px;
+    font-size: 38px;
     z-index: 9;
+    /* letter-spacing: -6px; */
+    /* word-spacing: 0px; */
 }
 
 .email {
@@ -659,13 +683,13 @@ input {
 
 .menu-list {
     display: flex;
-    gap: 3rem;
+    gap: 48px;
     flex-wrap: wrap;
 }
 
 .list-item {
     color: var(--dark);
-    font-size: 0.875rem;
+    font-size: 18px;
     line-height: 150%;
 }
 
